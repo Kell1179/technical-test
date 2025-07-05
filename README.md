@@ -32,11 +32,11 @@ technical-test/
 
 Proyek ini menggunakan beberapa framework, sehingga perlu dilakukan instalasi framework setelah clone dilakukan
 
-**npm install**
+<pre><code>**npm install**</code></pre>
 
 Setelah framework berhasil diinstal, proyek dapat dieksekusi secara lokal menggunakan
 
-**npm run dev**
+<pre><code>**npm run dev**</code></pre>
 
 
 ## Deployment
@@ -48,6 +48,7 @@ Proyek ini menggunakan vercel sebagai deployer, sehingga :
 1. Proyek mula-mula disimpan pada repository github
 2. Buka vercel dan login dengan akun github
 3. Import repository yang sesuai
+
 ![Import_Proyek](./public/Import_Proyek.png)
 
 Karena proyek ini menggunakan custom domain, maka :
@@ -56,7 +57,9 @@ Karena proyek ini menggunakan custom domain, maka :
 2. Buka Domain
 3. Klik add domain dan tambahkan domain yang telah dibeli
 4. Selanjutnya sesuaikan CNAME dan A pada penyedia domain sesuai dengan yang ada di Vercel dan tunggu beberapa saat
+
 ![Hosting](./public/Hosting.png)
+
 
 
 ## Konfigurasi SSL dan Backend
@@ -66,13 +69,21 @@ Pada menu tersebut setiap domain akan memiliki status dari SSLnya masing-masing.
   1. mbctechtest.online
   2. www.mbctechtest.online
   3. technical-test-swart.vercel.app
+
 ![Domain](./public/Domain.png)
+
 dan ketiganya memiliki status valid yang ditandai dengan simbol ceklis di sebelah kiri nama domain.
 
 Adapun untuk konfigurasi backend tidak dilakukan, karena EmailJS secara otomatis mengirimkan pesan user. Adapun konfigurasi EmailJS adalah sebagai berikut
   1. Import EmailJS
   2. Buat templat email pada EmailJS
+
 ![EmailJS](./public/EmailJS.png)
 
   3. Buat function yang menangani pengiriman email
+
+![SendEmail](./public/SendEmail.png)
+
   4. Buat form HTML dengan nama setiap tag inputnya sesuai dengan yang digunakan pada templat emailJS
+
+![Form](./public/Form.png)
