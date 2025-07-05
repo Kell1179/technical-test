@@ -1,4 +1,4 @@
-#MBC Laboratory Landing Page
+## MBC Laboratory Landing Page
 
 Proyek ini merupakan pembuatan landing page MBC Laboratory yang menyajikan beberapa informasi terkait MBC Laboratory aktual dan dibuat dengan pengintegrasian Next.JS dan EmailJS, sehingga mendukung pengunjung untuk dapat meninggalkan pesan yang akan secara otomatis terkirim dan dibalas melalui email
 
