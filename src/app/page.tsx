@@ -27,21 +27,31 @@ export default function Home() {
 
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
-    if (formRef.current) {
-      emailjs.sendForm(
-        'service_e34j8v8',
-        'template_04zkkzd',
-        formRef.current,
-        'ThlyOFI-2NA286Bcz'
-      )
-        .then(() => {
-          alert('Message sent!');
-        })
-        .catch((err) => {
-          console.error('Failed to send:', err);
-        });
+  
+    if (!formRef.current) {
+      console.error("Form ref is null");
+      return;
     }
+  
+    const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+    const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+  
+    if (!serviceID || !templateID || !publicKey) {
+      console.error("Missing environment variables");
+      return;
+    }
+  
+    emailjs
+      .sendForm(serviceID, templateID, formRef.current, publicKey)
+      .then(() => {
+        alert("Message sent!");
+      })
+      .catch((err) => {
+        console.error("Failed to send:", err);
+      });
   };
+  
 
   useEffect(() => {
     const observers = Object.entries(sectionRefs).map(([key, ref]) => {
@@ -72,11 +82,11 @@ export default function Home() {
         {/* HOME SECTION (tetap langsung tampil) */}
         <section id="home" className="min-h-screen flex flex-col items-center justify-center text-center bg-[url('/server.jpg')] bg-cover bg-center bg-no-repeat">
           <div className="flex flex-row flex-wrap justify-center gap-5 pt-3 pb-1">
-            <h1 className="text-4xl text-[#e11212] font-semibold">We're More Than</h1>
+            <h1 className="text-4xl text-[#e11212] font-semibold">We&apos;re More Than</h1>
             <h1 className="text-4xl text-[#d7d7d7] font-semibold">Laboratory!</h1>
           </div>
           <div className="flex flex-row flex-wrap justify-center gap-5">
-            <h1 className="text-4xl text-[#d7d7d7] font-semibold">We're Partners In Your</h1>
+            <h1 className="text-4xl text-[#d7d7d7] font-semibold">We&apos;re Partners In Your</h1>
             <h1 className="text-4xl text-[#3182BD] font-semibold">Growth!</h1>
           </div>
           <div className="text-[#d7d7d7] pt-2 font-semibold">#GoGoMBC #WeAttack #WeProtect</div>
