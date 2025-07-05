@@ -47,7 +47,7 @@ Proyek ini menggunakan vercel sebagai deployer, sehingga :
 
 1. Proyek mula-mula disimpan pada repository github
 2. Buka vercel dan login dengan akun github
-3. Import repository yang sesuai
+3. Import repository yang sesuai dan sesuaikan framework yang digunakan, lalu klik deploy
 
 ![Import_Proyek](./public/Import_Proyek.png)
 
