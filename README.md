@@ -32,11 +32,11 @@ technical-test/
 
 Proyek ini menggunakan beberapa framework, sehingga perlu dilakukan instalasi framework setelah clone dilakukan
 
-<pre><code>**npm install**</code></pre>
+<pre><code>npm install</code></pre>
 
 Setelah framework berhasil diinstal, proyek dapat dieksekusi secara lokal menggunakan
 
-<pre><code>**npm run dev**</code></pre>
+<pre><code>npm run dev</code></pre>
 
 
 ## Deployment
