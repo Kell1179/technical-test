@@ -6,7 +6,26 @@ Situs dapat dikunjungi di www.mbctechtest.online
 
 ## Struktur Proyek
 
-<pre><code>technical-test/ ├── public/ # Aset publik (gambar, icon, dll) ├── src/ │ ├── app/ │ │ ├── globals.css │ │ ├── layout.tsx │ │ └── page.tsx # Halaman utama (Home, Layanan, Kontak, Developer) │ └── components/ # Komponen UI (Navbar, Footer, dll) │ └── Navbar.tsx ├── .env.local # Variabel environment (EmailJS) ├── .gitignore ├── eslint.config.mjs ├── next.config.ts # Konfigurasi Next.js ├── package-lock.json ├── package.json # Informasi dependensi dan script ├── postcss.config.mjs ├── README.md └── tsconfig.json </code></pre>
+<pre><code>
+technical-test/
+├── public/ # Aset publik (gambar, icon, dll)
+├── src/
+│ ├── app/
+│ │ ├── globals.css
+│ │ ├── layout.tsx
+│ │ └── page.tsx # Halaman utama (Home, Layanan, Kontak, Developer)
+│ └── components/ # Komponen UI (Navbar, Footer, dll)
+│   └── Navbar.tsx # Halaman utama (Home, Layanan, Kontak, Developer)
+├── .env.local # Variabel environment (EmailJS)
+├── .git.ignore
+├── eslint.config.mjs
+├── next.config.ts # Konfigurasi Next.js
+├── package-lock.json
+├── package.json # Informasi dependensi dan script
+├── postcss.config.mjs
+├── README.md
+└── tsconfig.json
+</code></pre>
 
 
 ## Instalasi
