@@ -64,6 +64,7 @@ Pada menu tersebut setiap domain akan memiliki status dari SSLnya masing-masing.
   1. mbctechtest.online
   2. www.mbctechtest.online
   3. technical-test-swart.vercel.app
+![Domain](./public/Domain.png)
 dan ketiganya memiliki status valid yang ditandai dengan simbol ceklis di sebelah kiri nama domain.
 
 Adapun untuk konfigurasi backend tidak dilakukan, karena EmailJS secara otomatis mengirimkan pesan user. Adapun konfigurasi EmailJS adalah sebagai berikut
