@@ -48,6 +48,7 @@ Proyek ini menggunakan vercel sebagai deployer, sehingga :
 1. Proyek mula-mula disimpan pada repository github
 2. Buka vercel dan login dengan akun github
 3. Import repository yang sesuai
+![Import_Proyek](./public/Import_Proyek.png)
 
 Karena proyek ini menggunakan custom domain, maka :
 
@@ -55,6 +56,7 @@ Karena proyek ini menggunakan custom domain, maka :
 2. Buka Domain
 3. Klik add domain dan tambahkan domain yang telah dibeli
 4. Selanjutnya sesuaikan CNAME dan A pada penyedia domain sesuai dengan yang ada di Vercel dan tunggu beberapa saat
+![Hosting](./public/Hosting.png)
 
 
 ## Konfigurasi SSL dan Backend
@@ -70,5 +72,7 @@ dan ketiganya memiliki status valid yang ditandai dengan simbol ceklis di sebela
 Adapun untuk konfigurasi backend tidak dilakukan, karena EmailJS secara otomatis mengirimkan pesan user. Adapun konfigurasi EmailJS adalah sebagai berikut
   1. Import EmailJS
   2. Buat templat email pada EmailJS
+![EmailJS](./public/EmailJS.png)
+
   3. Buat function yang menangani pengiriman email
   4. Buat form HTML dengan nama setiap tag inputnya sesuai dengan yang digunakan pada templat emailJS
